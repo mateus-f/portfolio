@@ -1,0 +1,28 @@
+.button {
+	display: flex;
+	gap: 0.625rem;
+	padding: 0.625rem 1.875rem;
+	border-radius: var(--radius-base);
+	font-size: var(--text-normal);
+	align-items: center;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.button.dark {
+	background-color: var(--dark-color);
+	color: var(--light-color);
+	border: 1px solid var(--dark-gray-color);
+	box-shadow: inset 4px 4px 10px rgba(168, 168, 168, 0.4),
+		inset -4px -4px 10px rgba(168, 168, 168, 0.4),
+		0px 5px 15px rgba(125, 125, 125, 0.2);
+}
+
+.button.light {
+	background-color: var(--light-color);
+	color: var(--dark-color);
+	border: 1px solid var(--gray-color);
+	box-shadow: inset 4px 4px 10px rgb(176, 172, 172, 0.2),
+		inset -4px -4px 10px rgb(176, 172, 172, 0.2),
+		0px 5px 15px rgba(125, 125, 125, 0.2);
+}

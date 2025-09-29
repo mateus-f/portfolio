@@ -1,0 +1,63 @@
+header {
+	color: var(--dark-color);
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 2.5rem;
+	padding-inline: var(--inline-spacing);
+	font-size: var(--text-normal);
+	z-index: 3;
+}
+
+ul {
+	display: flex;
+	gap: calc(0.3125rem + 1vw);
+}
+
+li a {
+	padding: 0.3125rem 0.625rem;
+	transition: var(--transition);
+}
+
+li a:is(:hover, :focus, :active) {
+	border-radius: 0 0.625rem;
+	background-color: var(--dark-color);
+	color: var(--light-color);
+}
+
+.actions {
+	display: flex;
+	gap: 0.625rem;
+}
+
+.actions .hamburguer-menu {
+	display: none;
+	background-color: transparent;
+	font-size: var(--text-normal);
+	color: var(--dark-color);
+	padding: 0.625rem;
+}
+
+/* 870px */
+@media (max-width: 61.25rem) {
+	nav {
+		display: none;
+	}
+
+	.actions .hamburguer-menu {
+		display: block;
+	}
+}
+
+/* 580px */
+@media (max-width: 36.25rem) {
+	header img {
+		height: 2.1875rem;
+	}
+
+	button.download {
+		display: none;
+	}
+}
