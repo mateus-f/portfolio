@@ -11,9 +11,8 @@
 	--dark-gray-color: #3f3f3f;
 	--gray-color: #dedede;
 
-	--dark-gradient: to right, var(--dark-color), var(--dark-gray-color);
-	--light-gradient: to right, var(var(--light-color)),
-		var(var(--dark-gray-color));
+	--dark-gradient: to right, var(--dark-color), #848484;
+	--light-gradient: -81deg, var(--light-color), #3d3d3d;
 
 	--transition: all ease-in-out 0.3s;
 
@@ -31,13 +30,6 @@
 		--inline-spacing: calc(2vw + 1.25rem);
 	}
 }
-
-/* @media (max-width: 53.75rem) {
-	:root {
-		--hero-title: clamp(4.5rem, 10vw, 7.5rem);
-		--hero-role: clamp(2.25rem, 4vw, 3.25rem);
-	}
-} */
 
 body {
 	background-color: var(--dark-color);
