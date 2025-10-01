@@ -1,6 +1,6 @@
 section {
 	width: 100%;
-	padding-inline: var(--inline-spacing);
+	padding: 3.125rem var(--inline-spacing);
 }
 
 section:nth-child(2n) {
