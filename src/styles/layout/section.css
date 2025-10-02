@@ -90,7 +90,6 @@ section:nth-child(2n + 1) {
 		width: 50%;
 		color: var(--dark-color);
 		font-size: var(--text-normal);
-		line-height: calc(var(--text-normal) * 1.2);
 	}
 
 	.social-buttons {
