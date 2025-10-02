@@ -7,6 +7,29 @@
 	align-items: center;
 	cursor: pointer;
 	transition: var(--transition);
+	position: relative;
+	overflow: hidden;
+
+	&:after {
+		content: "";
+		height: 7.5rem;
+		width: 2rem;
+		bottom: 50;
+		left: -100%;
+		position: absolute;
+		opacity: 0.15;
+		transform: rotate(45deg);
+		transition: var(--transition);
+		z-index: 1;
+	}
+
+	&:is(:hover, :focus, :active) {
+		transform: translateY(-0.3125rem);
+
+		&:after {
+			animation: sheen 1s both infinite;
+		}
+	}
 }
 
 .button.dark {
@@ -16,6 +39,10 @@
 	box-shadow: inset 4px 4px 10px rgba(168, 168, 168, 0.4),
 		inset -4px -4px 10px rgba(168, 168, 168, 0.4),
 		0px 5px 15px rgba(125, 125, 125, 0.2);
+
+	&::after {
+		background: var(--light-color);
+	}
 }
 
 .button.light {
@@ -25,4 +52,19 @@
 	box-shadow: inset 4px 4px 10px rgb(176, 172, 172, 0.2),
 		inset -4px -4px 10px rgb(176, 172, 172, 0.2),
 		0px 5px 15px rgba(125, 125, 125, 0.2);
+
+	&::after {
+		opacity: 0.05;
+		background: var(--dark-gray-color);
+	}
+}
+
+@keyframes sheen {
+	from {
+		left: -100%;
+	}
+
+	to {
+		left: 120%;
+	}
 }
