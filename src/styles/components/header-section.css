@@ -1,0 +1,40 @@
+.header-section {
+	display: flex;
+	flex-direction: column;
+	gap: 1.875rem;
+	margin-bottom: 1.875rem;
+	text-align: center;
+}
+
+.header-section h2 {
+	font-size: var(--hero-role);
+	font-weight: 700;
+	padding-block: 0.25rem;
+	line-height: 1;
+}
+
+section:nth-child(2n + 1) .header-section {
+	h2 {
+		background: linear-gradient(var(--light-gradient));
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	p {
+		color: var(--light-color);
+	}
+}
+
+section:nth-child(2n) .header-section {
+	h2 {
+		background: linear-gradient(var(--dark-gradient));
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	p {
+		color: var(--dark-color);
+	}
+}
