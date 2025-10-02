@@ -1,0 +1,35 @@
+.stacks span {
+	display: flex;
+	align-items: center;
+	height: 2.1875rem;
+	padding-inline: 1.875rem;
+	background-color: transparent;
+	border: 1px solid var(--gray-color);
+  border-radius: 0 0.625rem;
+	transition: var(--transition);
+  flex: 1;
+
+	&.html {
+		background-color: var(--html-bg);
+		color: var(--html-color);
+		border-color: var(--html-color);
+	}
+
+  &.css{
+    background-color: var(--css-bg);
+		color: var(--css-color);
+		border-color: var(--css-color);
+  }
+
+  &.tailwind{
+    background-color: var(--tailwind-bg);
+		color: var(--tailwind-color);
+		border-color: var(--tailwind-color);
+  }
+
+	&.javascript {
+		background-color: var(--js-bg);
+		color: var(--js-color);
+		border-color: var(--js-color);
+	}
+}
