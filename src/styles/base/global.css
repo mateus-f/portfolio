@@ -5,21 +5,23 @@
 	font-family: Inter, sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 :root {
 	--dark-color: #040c0c;
 	--light-color: #fbfbfb;
 	--dark-gray-color: #3f3f3f;
 	--gray-color: #dedede;
-
 	--html-bg: #572500;
 	--html-color: #ff6d00;
 	--css-bg: #241037;
-	--css-color: #B266FF;
+	--css-color: #b266ff;
 	--tailwind-bg: #034563;
 	--tailwind-color: #38bdf8;
 	--js-bg: #665600;
 	--js-color: #ffd400;
-
 	--dark-gradient: to right, var(--dark-color), #848484;
 	--light-gradient: -81deg, var(--light-color), #3d3d3d;
 
@@ -60,7 +62,7 @@ button {
 	border: none;
 }
 
-img {
+img:not(.icon) {
 	user-select: none;
 	pointer-events: none;
 }
