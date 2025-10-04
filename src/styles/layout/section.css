@@ -1,6 +1,8 @@
 section {
 	width: 100%;
 	padding: 3.125rem var(--inline-spacing);
+	overflow: hidden;
+	position: relative;
 }
 
 section:nth-child(2n) {
@@ -12,14 +14,12 @@ section:nth-child(2n + 1) {
 }
 
 .hero {
-	position: relative;
 	padding-block: 8.125rem 3.125rem;
 	height: 100dvh;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	border-radius: 0 0 3.125rem 3.125rem;
-	overflow: hidden;
 }
 
 @media (max-width: 23.75rem) {
