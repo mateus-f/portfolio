@@ -3,6 +3,7 @@
 	flex-direction: column;
 	gap: 1.875rem;
 	margin-bottom: 1.875rem;
+	align-items: center;
 	text-align: center;
 }
 
@@ -11,6 +12,7 @@
 	font-weight: 700;
 	padding-block: 0.25rem;
 	line-height: 1;
+	width: fit-content;
 }
 
 section:nth-child(2n + 1) .header-section {
