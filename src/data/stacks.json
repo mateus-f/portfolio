@@ -1,0 +1,42 @@
+[
+	{
+		"label": "HTML",
+		"iconUrl": "./src/assets/images/stack-icons/html.svg"
+	},
+	{
+		"label": "CSS",
+		"iconUrl": "./src/assets/images/stack-icons/css.svg"
+	},
+	{
+		"label": "JavaScript",
+		"iconUrl": "./src/assets/images/stack-icons/javascript.svg"
+	},
+	{
+		"label": "TypeScript",
+		"iconUrl": "./src/assets/images/stack-icons/typescript.svg"
+	},
+	{
+		"label": "Angular",
+		"iconUrl": "./src/assets/images/stack-icons/angular.svg"
+	},
+	{
+		"label": "SCSS",
+		"iconUrl": "./src/assets/images/stack-icons/scss.svg"
+	},
+	{
+		"label": "Tailwind",
+		"iconUrl": "./src/assets/images/stack-icons/tailwind.svg"
+	},
+	{
+		"label": "Git",
+		"iconUrl": "./src/assets/images/stack-icons/git.svg"
+	},
+	{
+		"label": "GitHub",
+		"iconUrl": "./src/assets/images/stack-icons/github.svg"
+	},
+	{
+		"label": "Figma",
+		"iconUrl": "./src/assets/images/stack-icons/figma.svg"
+	}
+]
