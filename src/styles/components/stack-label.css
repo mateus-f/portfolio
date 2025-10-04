@@ -1,11 +1,12 @@
 .stacks span {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	height: 2.1875rem;
 	padding-inline: 1.875rem;
 	background-color: transparent;
 	border: 1px solid var(--gray-color);
-  border-radius: 0 0.625rem;
+  border-radius: var(--radius-base);
 	transition: var(--transition);
   flex: 1;
 
