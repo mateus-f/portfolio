@@ -33,5 +33,7 @@ const toggleSticky = () => {
 
 window.addEventListener("scroll", () => toggleSticky())
 hamburguerBtn.addEventListener("click", () => toggleMenu())
-navLinks.forEach(link => link.addEventListener("click", () => toggleMenu()))
+navLinks.forEach(link => link.addEventListener("click", () => {
+  if (window.innerWidth <= 1060) toggleMenu()
+}))
 overlay.addEventListener("click", () => toggleMenu());
