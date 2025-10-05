@@ -21,14 +21,14 @@ async function showProjects() {
         <div class="image">
           <div class="gradient" aria-hidden="true"></div>
           <div class="anchor-buttons">
-            <a href="${card.urlGithub}" target="_blank" title="Acesse o repositório no Github">
+            <a href="${card.urlGithub}" target="_blank" rel="noopener noreferrer" title="Acesse o repositório no Github">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M4.25 3.75C3.00736 3.75 2 4.75736 2 6V18C2 19.2426 3.00736 20.25 4.25 20.25H19.75C20.9926 20.25 22 19.2426 22 18V9C22 7.75736 20.9926 6.75 19.75 6.75H12.25C12.0139 6.75 11.7916 6.63885 11.65 6.45L10.3 4.65C9.87508 4.08344 9.2082 3.75 8.5 3.75H4.25Z"
                   fill="currentColor" />
               </svg>
             </a>
-            <a href="${card.urlPreview}" target="_blank" title="Acesse o site">
+            <a href="${card.urlPreview}" target="_blank" rel="noopener noreferrer" title="Acesse o site">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                 class="lucide lucide-external-link-icon lucide-external-link">
