@@ -1,14 +1,28 @@
 header {
 	color: var(--dark-color);
-	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	position: fixed;
 	top: 2.5rem;
-	padding-inline: var(--inline-spacing);
 	font-size: var(--text-normal);
-	z-index: 3;
+	z-index: 5;
+	left: var(--inline-spacing);
+	right: var(--inline-spacing);
+	transition: all 0.3s cubic-bezier(0.86, -0.67, 0, 1.11);
+
+	&.sticky {
+		padding: 1.25rem 2.5rem;
+		border-radius: calc(var(--radius-base) + 1.25rem);
+		background-color: rgba(4, 12, 12, 0.85);
+		border: 1px solid var(--dark-gray-color);
+		backdrop-filter: blur(0.625rem);
+		color: var(--light-color);
+		top: 1.25rem;
+		box-shadow: inset 4px 4px 10px rgba(168, 168, 168, 0.4),
+			inset -4px -4px 10px rgba(168, 168, 168, 0.4),
+			0px 5px 15px rgba(125, 125, 125, 0.2);
+	}
 }
 
 ul {
@@ -19,12 +33,21 @@ ul {
 li a {
 	padding: 0.3125rem 0.625rem;
 	transition: var(--transition);
+	border-radius: 0 0.625rem;
 }
 
 li a:is(:hover, :focus, :active) {
-	border-radius: 0 0.625rem;
 	background-color: var(--dark-color);
 	color: var(--light-color);
+
+	.sticky & {
+		background-color: var(--light-color);
+		color: var(--dark-color);
+	}
+}
+
+li .download {
+	display: none;
 }
 
 .actions {
@@ -40,24 +63,79 @@ li a:is(:hover, :focus, :active) {
 	padding: 0.625rem;
 }
 
-/* 870px */
-@media (max-width: 61.25rem) {
-	nav {
+@media (max-width: 66.25rem) {
+	.actions .download {
 		display: none;
+	}
+
+	nav {
+		top: -31.25rem;
+		border-radius: var(--radius-base);
+		right: 0;
+		width: 100%;
+		position: absolute;
+		background-color: rgba(251, 251, 251, 0.9);
+		border: 1px solid var(--gray-color);
+		backdrop-filter: blur(0.625rem);
+		color: var(--dark-color);
+		box-shadow: inset 4px 4px 10px rgb(176, 172, 172, 0.2),
+			inset -4px -4px 10px rgb(176, 172, 172, 0.2),
+			0px 5px 15px rgba(125, 125, 125, 0.2);
+		transition: all 0.3s cubic-bezier(1, -0.56, 0, 0.9);
+		opacity: 0;
+
+		&.active {
+			top: calc(3.125rem + 0.9375rem);
+			opacity: 1;
+		}
+
+		.sticky &.active {
+			top: calc(5.75rem + 0.9375rem);
+			background-color: rgba(4, 12, 12, 0.85);
+			border: 1px solid var(--dark-gray-color);
+			backdrop-filter: blur(0.625rem);
+			color: var(--light-color);
+			box-shadow: inset 4px 4px 10px rgba(168, 168, 168, 0.4),
+				inset -4px -4px 10px rgba(168, 168, 168, 0.4),
+				0px 5px 15px rgba(125, 125, 125, 0.2);
+		}
+
+		ul {
+			flex-direction: column;
+			margin-block: 1.25rem;
+
+			li {
+				display: flex;
+				align-items: center;
+			}
+
+			li a {
+				width: 100%;
+				padding: 1.25rem 2.5rem;
+				border-radius: 0;
+			}
+
+			li .download {
+				margin: 6px 2.5rem;
+				display: flex;
+				width: 100%;
+			}
+		}
 	}
 
 	.actions .hamburguer-menu {
 		display: block;
+		color: var(--dark-color);
+	}
+
+	.sticky .actions .hamburguer-menu svg {
+		color: var(--light-color);
+		transition: var(--transition);
 	}
 }
 
-/* 580px */
 @media (max-width: 36.25rem) {
 	header img {
 		height: 2.1875rem;
-	}
-
-	button.download {
-		display: none;
 	}
 }
