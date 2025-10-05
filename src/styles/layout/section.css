@@ -5,11 +5,11 @@ section {
 	position: relative;
 }
 
-section:nth-child(2n) {
+section:nth-child(odd) {
 	background-color: var(--light-color);
 }
 
-section:nth-child(2n + 1) {
+section:nth-child(even) {
 	background-color: var(--dark-color);
 }
 
@@ -22,7 +22,7 @@ section:nth-child(2n + 1) {
 	border-radius: 0 0 3.125rem 3.125rem;
 }
 
-@media (max-width: 23.75rem) {
+@media (max-width: 23.75rem), (max-height: 48.75rem) {
 	.hero {
 		height: fit-content;
 	}

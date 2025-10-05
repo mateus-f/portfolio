@@ -1,7 +1,7 @@
 .header-section {
 	display: flex;
 	flex-direction: column;
-	gap: 1.875rem;
+	gap: 1.625rem;
 	margin-bottom: 1.875rem;
 	align-items: center;
 	text-align: center;
@@ -15,7 +15,7 @@
 	width: fit-content;
 }
 
-section:nth-child(2n + 1) .header-section {
+section:nth-child(even) .header-section {
 	h2 {
 		background: linear-gradient(var(--light-gradient));
 		background-clip: text;
@@ -28,7 +28,7 @@ section:nth-child(2n + 1) .header-section {
 	}
 }
 
-section:nth-child(2n) .header-section {
+section:nth-child(odd) .header-section {
 	h2 {
 		background: linear-gradient(var(--dark-gradient));
 		background-clip: text;
