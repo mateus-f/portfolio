@@ -1,0 +1,26 @@
+[
+	{
+		"period": "Agosto 2025 - 2029",
+		"position": "Bacharelado em Ciência da Computação",
+		"institution": "Instituto Federal do Ceará - IFCE",
+		"logoPath": "./src/assets/images/institution-logo/ifce.webp"
+	},
+	{
+		"period": "Julho 2025 - Atual",
+		"position": "Auxiliar Administrativo - Jovem Aprendiz",
+		"institution": "Dunas Revenda Ambev",
+		"logoPath": "./src/assets/images/institution-logo/dunas.webp"
+	},
+	{
+		"period": "Agosto 2024 - Dezembro 2024",
+		"position": "Estágio em TI",
+		"institution": "Centro Universitário do Vale do Jaguaribe",
+		"logoPath": "./src/assets/images/institution-logo/unijaguaribe.webp"
+	},
+	{
+		"period": "Agosto 2023 - Dezembro 2023",
+		"position": "Monitor de Robótica - Voluntário",
+		"institution": "CNPq",
+		"logoPath": "./src/assets/images/institution-logo/cnpq.webp"
+	}
+]
