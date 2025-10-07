@@ -11,8 +11,12 @@
 	font-size: var(--hero-role);
 	font-weight: 700;
 	padding-block: 0.25rem;
-	line-height: 1;
+	line-height: var(--title-lh);
 	width: fit-content;
+}
+
+.header-section p {
+	line-height: var(--text-lh);
 }
 
 section:nth-child(even) .header-section {

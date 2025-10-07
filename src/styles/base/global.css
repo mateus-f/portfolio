@@ -14,7 +14,7 @@ html {
 	--light-color: #fbfbfb;
 	--dark-gray-color: #3f3f3f;
 	--gray-color: #dedede;
-	--html-bg: #572500;
+	--html-bg: #532502;
 	--html-color: #ff6d00;
 	--css-bg: #241037;
 	--css-color: #b266ff;
@@ -22,8 +22,16 @@ html {
 	--tailwind-color: #38bdf8;
 	--js-bg: #665600;
 	--js-color: #ffd400;
+
 	--dark-gradient: to right, var(--dark-color), #848484;
 	--light-gradient: -81deg, var(--light-color), #3d3d3d;
+
+	--dark-bs: inset 4px 4px 10px rgba(168, 168, 168, 0.2),
+		inset -4px -4px 10px rgba(168, 168, 168, 0.2),
+		0px 5px 15px rgba(125, 125, 125, 0.2);
+	--light-bs: inset 4px 4px 10px rgb(176, 172, 172, 0.2),
+		inset -4px -4px 10px rgb(176, 172, 172, 0.2),
+		0px 5px 15px rgba(125, 125, 125, 0.2);
 
 	--transition: all ease-in-out 0.3s;
 
@@ -33,9 +41,10 @@ html {
 
 	--hero-title: clamp(4.5rem, 12vw, 7.5rem);
 	--hero-role: clamp(2.25rem, 6vw, 3.25rem);
-	--text-normal: calc(0.875rem + 0.1vw);
+	--normal-text: calc(0.875rem + 0.1vw);
 
-	--lh-normal: calc(var(--text-normal) * 1.2);
+	--title-lh: 1.2;
+	--text-lh: 1.5;
 }
 
 @media (max-width: 80rem) {
@@ -78,7 +87,7 @@ p {
 	display: none;
 }
 
-.no-scroll{
+.no-scroll {
 	overflow: hidden;
 }
 

@@ -83,13 +83,14 @@ section:nth-child(even) {
 		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		line-height: 1;
+		line-height: var(--title-lh);
 	}
 
 	p {
 		width: 50%;
 		color: var(--dark-color);
-		font-size: var(--text-normal);
+		font-size: var(--normal-text);
+		line-height: var(--text-lh);
 	}
 
 	.social-buttons {
