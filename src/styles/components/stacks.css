@@ -1,4 +1,4 @@
-.stacks {
+.stacks-container {
 	display: grid;
 	justify-content: center;
 	grid-template-columns: repeat(5, clamp(3.125rem, 10vw, 6.25rem));

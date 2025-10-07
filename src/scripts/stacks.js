@@ -12,7 +12,7 @@ async function getStackData() {
 }
 
 async function showStackIcons() {
-  const stackContainer = document.querySelector(".stacks");
+  const stackContainer = document.querySelector(".stacks-container");
   const stacks = await getStackData();
 
   stacks.forEach(stack => {
