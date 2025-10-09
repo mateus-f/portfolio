@@ -16,6 +16,7 @@
 }
 
 .header-section p {
+	font-size: var(--normal-text);
 	line-height: var(--text-lh);
 }
 

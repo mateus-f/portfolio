@@ -14,6 +14,8 @@ html {
 	--light-color: #fbfbfb;
 	--dark-gray-color: #3f3f3f;
 	--gray-color: #dedede;
+	--red-color: #db211e;
+	--green-color: #11936a;
 	--html-bg: #532502;
 	--html-color: #ff6d00;
 	--css-bg: #241037;
@@ -27,11 +29,10 @@ html {
 	--light-gradient: -81deg, var(--light-color), #3d3d3d;
 
 	--dark-bs: inset 4px 4px 10px rgba(168, 168, 168, 0.2),
-		inset -4px -4px 10px rgba(168, 168, 168, 0.2),
-		0px 5px 15px rgba(125, 125, 125, 0.2);
+		inset -4px -4px 10px rgba(168, 168, 168, 0.2), var(--outside-bs);
 	--light-bs: inset 4px 4px 10px rgb(176, 172, 172, 0.2),
-		inset -4px -4px 10px rgb(176, 172, 172, 0.2),
-		0px 5px 15px rgba(125, 125, 125, 0.2);
+		inset -4px -4px 10px rgb(176, 172, 172, 0.2), var(--outside-bs);
+	--outside-bs: 0px 5px 15px rgba(125, 125, 125, 0.2);
 
 	--transition: all ease-in-out 0.3s;
 
