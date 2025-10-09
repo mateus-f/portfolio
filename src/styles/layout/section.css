@@ -18,6 +18,7 @@ section:nth-child(even) {
 	height: 100dvh;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	flex-direction: column;
 	border-radius: 0 0 3.125rem 3.125rem;
 }
