@@ -1,0 +1,125 @@
+form {
+	display: flex;
+	max-width: 50rem;
+	justify-self: center;
+	padding: 3.125rem 1.875rem;
+	border: 1px solid var(--gray-color);
+	background-color: var(--light-color);
+	border-radius: calc(var(--radius-base) + 1.875rem);
+	box-shadow: var(--outside-bs);
+	flex-direction: column;
+	gap: 1.875rem;
+	overflow: auto;
+	z-index: 1;
+	position: relative;
+
+	.form-fields {
+		display: flex;
+		gap: 1.875rem;
+		flex-wrap: wrap;
+
+		.input-field {
+			flex: 1 25rem;
+			display: flex;
+			flex-direction: column;
+			gap: 0.625rem;
+			font-size: var(--normal-text);
+			color: var(--dark-color);
+
+			&:has(.incorrect) {
+				color: var(--red-color);
+
+				.incorrect:focus {
+					border-color: var(--red-color);
+				}
+
+				.error {
+					font-size: calc(var(--normal-text) - 2px);
+					color: var(--red-color);
+					transition: var(--transition);
+				}
+			}
+
+			label {
+				span {
+					color: var(--red-color);
+				}
+			}
+
+			input,
+			textarea {
+				background-color: var(--light-color);
+				border: 0.0625rem solid var(--gray-color);
+				border-radius: var(--radius-base);
+				padding-inline: 1.25rem;
+				transition: var(--transition);
+				outline: none;
+
+				&.incorrect {
+					border-color: var(--red-color);
+				}
+
+				&:focus {
+					border-color: var(--dark-gray-color);
+				}
+			}
+
+			input {
+				height: 3.125rem;
+			}
+
+			textarea {
+				padding-block: 1.25rem;
+				height: 10rem;
+				resize: none;
+				line-height: var(--text-lh);
+			}
+		}
+	}
+
+	button {
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		height: 3rem;
+
+		&:disabled {
+			opacity: 0.8;
+			cursor: not-allowed;
+
+			&:is(:hover, :focus, :active){
+				transform: translateY(0);
+			}
+		}
+
+		.loading-icon {
+			display: flex;
+			gap: 2px;
+
+			.circle {
+				width: 8px;
+				height: 8px;
+				border-radius: 50%;
+				background-color: var(--light-color);
+				animation: jumping 1.2s ease-in-out infinite alternate-reverse;
+
+				&:nth-child(1) {
+					animation-delay: 100ms;
+				}
+
+				&:nth-child(2) {
+					animation-delay: 300ms;
+				}
+
+				&:nth-child(3) {
+					animation-delay: 500ms;
+				}
+			}
+		}
+	}
+}
+
+@keyframes jumping {
+	50% {
+		transform: translateY(-0.3125rem);
+	}
+}

@@ -24,6 +24,8 @@
   <script src="src/scripts/projects.js" async></script>
   <script src="src/scripts/stacks.js" async></script>
   <script src="src/scripts/exp-and-edu.js" async></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" async></script>
+  <script src="src/scripts/form.js" async></script>
   <title>Portfólio | Mateus Ferreira</title>
 </head>
 
@@ -48,7 +50,7 @@
           <a href="#learning">Experiencia e Educação</a>
         </li>
         <li>
-          <a href="">Contate-me</a>
+          <a href="#contact">Contate-me</a>
         </li>
         <li>
           <button class="button dark download">
@@ -156,6 +158,41 @@
       <div class="items-container">
       </div>
     </div>
+  </section>
+  <section id="contact">
+    <div class="header-section">
+      <h2 class="title-section">Contate-me</h2>
+      <p>Ficou com alguma dúvida ou ideia? Me chama!</p>
+    </div>
+    <form method="post" id="contact-form">
+      <div class="form-fields">
+        <div class="input-field">
+          <label for="name">Nome <span>*</span></label>
+          <input type="text" id="name" autocomplete="name" placeholder="Digite seu nome" required>
+        </div>
+        <div class="input-field">
+          <label for="email">Email <span>*</span></label>
+          <input type="email" id="email" autocomplete="email" placeholder="ex: email@email.abc" required>
+        </div>
+        <div class="input-field">
+          <label for="subject">Assunto <span>*</span></label>
+          <input type="text" id="subject" autocomplete="off" placeholder="Digite o assunto do email" required>
+        </div>
+        <div class="input-field">
+          <label for="message">Mensagem <span>*</span></label>
+          <textarea name="message" id="message" rows="5" placeholder="Insira sua mensagem..." required></textarea>
+        </div>
+      </div>
+      <button type="submit" class="button dark">
+        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M21.5127 5.77444C22.1665 3.97839 20.4248 2.23663 18.6287 2.89049L4.63167 7.98618C2.69138 8.69256 2.64771 11.4209 4.56441 12.189L9.72779 14.2582C9.91801 14.3344 10.0687 14.4851 10.145 14.6754L12.2142 19.8387C12.9823 21.7554 15.7106 21.7118 16.417 19.7715L21.5127 5.77444Z"
+            fill="currentColor" />
+        </svg>
+        Enviar
+      </button>
+    </form>
+    <div class="white-pattern" aria-hidden="true"></div>
   </section>
 </body>
 
