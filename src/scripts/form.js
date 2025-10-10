@@ -82,7 +82,7 @@ function validateEmail(email) {
 }
 
 function validateSubject(subject) {
-  const isValidSubject = (subject) => /^[\w\s\-\_\.\!\?]+$/.test(subject);
+  const isValidSubject = (subject) => /^[A-Za-zÀ-ÖØ-öø-ÿ0-9\s.,!?()'"\-_:;@%]+$/.test(subject);
   trimAndUpdateValue(subject);
 
   if (!subject.value) {
