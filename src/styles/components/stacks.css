@@ -3,10 +3,12 @@
 	justify-content: center;
 	grid-template-columns: repeat(5, clamp(3.125rem, 10vw, 6.25rem));
 	gap: 1.875rem;
+	position: relative;
+	z-index: 1;
 
 	@media (max-width: 40rem) {
-			display: flex;
-			flex-wrap: wrap;
+		display: flex;
+		flex-wrap: wrap;
 	}
 
 	.icon {
@@ -14,7 +16,6 @@
 		transition: var(--transition);
 		filter: saturate(0);
 		cursor: pointer;
-		z-index: 1;
 
 		&:hover {
 			filter: saturate(1) drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.12));
