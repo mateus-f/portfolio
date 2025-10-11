@@ -34,7 +34,8 @@ li a {
 	border-radius: 0 0.625rem;
 }
 
-li a:is(:hover, :focus, :active) {
+li a:is(:hover, :focus, :active),
+li a.active {
 	background-color: var(--dark-color);
 	color: var(--light-color);
 

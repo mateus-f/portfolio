@@ -1,4 +1,5 @@
 const hamburguerBtn = document.querySelector(".hamburguer-menu");
+const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll("nav ul li a");
 const overlay = document.querySelector(".overlay");
 const toggleMenu = () => {
@@ -30,10 +31,32 @@ const toggleSticky = () => {
   actDownloadBtn.classList.toggle("dark", !isSticky);
   overlay.classList.toggle("dark", isSticky);
 }
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const id = entry.target.getAttribute("id");
+    const link = document.querySelector(`ul li a[href="#${id}"]`);
 
-window.addEventListener("scroll", () => toggleSticky())
-hamburguerBtn.addEventListener("click", () => toggleMenu())
+    if (entry.isIntersecting) {
+      navLinks.forEach((navLink) => navLink.classList.remove("active"));
+      link?.classList.add("active");
+    }
+  });
+},
+  {
+    threshold: 0.6,
+  }
+)
+
+window.addEventListener("scroll", () => {
+  toggleSticky()
+  if (window.scrollY < 50) {
+    navLinks.forEach((navLink) => navLink.classList.remove("active"));
+    document.querySelector('ul li a[href="#"]').classList.add("active");
+  }
+});
+hamburguerBtn.addEventListener("click", () => toggleMenu());
+overlay.addEventListener("click", () => toggleMenu());
 navLinks.forEach(link => link.addEventListener("click", () => {
   if (window.innerWidth <= 1060) toggleMenu()
-}))
-overlay.addEventListener("click", () => toggleMenu());
+}));
+sections.forEach((section) => observer.observe(section));
