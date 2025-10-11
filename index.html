@@ -21,6 +21,7 @@
   <link rel="shortcut icon" href="src/assets/logo/logo-mf-light.svg" type="image/x-icon"
     media="(prefers-color-scheme: dark)">
   <script src="src/scripts/header.js" async></script>
+  <script src="src/scripts/scroll-animation.js" async></script>
   <script src="src/scripts/projects.js" async></script>
   <script src="src/scripts/stacks.js" async></script>
   <script src="src/scripts/exp-and-edu.js" async></script>
@@ -97,12 +98,12 @@
   <section class="hero">
     <div class="white-pattern" aria-hidden="true"></div>
     <div class="name-presentation">
-      <img src="src/assets/images/character-levitating.webp" alt="Personagem com notebook ao lado" fetchpriority="high">
-      <span class="before-image" aria-hidden="true">Mateus Ferreira</span>
-      <span class="after-image">Mateus Ferreira</span>
+      <img src="src/assets/images/character-levitating.webp" alt="Personagem com notebook ao lado" fetchpriority="high" class="reveal">
+      <span class="before-image reveal" aria-hidden="true">Mateus Ferreira</span>
+      <span class="after-image reveal">Mateus Ferreira</span>
     </div>
 
-    <div class="info-presentation">
+    <div class="info-presentation reveal">
       <h1>Eu sou Desenvolvedor Front-end</h1>
       <p>Acredito no equilíbrio entre estética e funcionalidade, focando em performance e na experiência real de quem
         usa. No fim
@@ -133,38 +134,38 @@
     </div>
   </section>
   <section id="projects">
-    <div class="header-section">
+    <div class="header-section reveal">
       <h2 class="title-section">Projetos</h2>
       <p>Alguns dos projetos que fiz parte</p>
     </div>
-    <div class="cards">
+    <div class="cards reveal">
     </div>
   </section>
   <section id="skills">
-    <div class="header-section">
+    <div class="header-section reveal">
       <h2 class="title-section">Habilidades</h2>
       <p>Algumas tecnologias que utilizo no meu dia-a-dia ou já tive contato</p>
     </div>
-    <div class="stacks-container"></div>
+    <div class="stacks-container reveal"></div>
     <div class="white-pattern" aria-hidden="true"></div>
   </section>
   <section id="learning">
-    <div class="header-section">
+    <div class="header-section reveal">
       <h2 class="title-section">Experiência e Educação</h2>
       <p>Experiências anteriores & minha educação</p>
     </div>
-    <div class="learning-container">
+    <div class="learning-container reveal">
       <img src="src/assets/images/character-reading.webp" alt="Character reading" loading="lazy" class="character">
       <div class="items-container">
       </div>
     </div>
   </section>
   <section id="contact">
-    <div class="header-section">
+    <div class="header-section reveal">
       <h2 class="title-section">Contate-me</h2>
       <p>Ficou com alguma dúvida ou ideia? Me chama!</p>
     </div>
-    <form method="post" id="contact-form">
+    <form method="post" id="contact-form" class="reveal">
       <div class="form-fields">
         <div class="input-field">
           <label for="name">Nome <span>*</span></label>
