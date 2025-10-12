@@ -1,26 +1,26 @@
 [
 	{
 		"title": "Quanto tempo faz?",
-		"description": "Calculadora de idade, que recebe uma data de nascimento e exibe a idade em anos, meses e dias. O projeto foca em responsividade, validação de dados e manipulação precisa de datas.",
+		"description": "Calculadora de idade que recebe a data de nascimento e mostra a idade em anos, meses e dias. Foca em responsividade, validação e manipulação de datas.",
 		"stacks": ["HTML", "CSS", "Javascript", "Figma"],
 		"urlPreview": "https://quanto-tempo-faz-eight.vercel.app",
 		"urlGithub": "https://github.com/mateus-f/quanto-tempo-faz",
-		"urlImage": "./src/assets/images/quanto-tempo-faz.webp"
+		"urlImage": "./src/assets/images/projects/quanto-tempo-faz.webp"
 	},
 	{
 		"title": "Landing Page do Superman",
-		"description": "Projeto de estudo desenvolvido como parte de um desafio do The Odin Project, com foco em praticar Flexbox, responsividade e boas práticas de desenvolvimento.",
+		"description": "Projeto de estudo criado como parte de um desafio do The Odin Project, com foco em praticar Flexbox, responsividade e boas práticas de código.",
 		"stacks": ["HTML", "CSS", "Javascript"],
 		"urlPreview": "https://mateus-f.github.io/superman-page",
 		"urlGithub": "https://github.com/mateus-f/superman-page",
-		"urlImage": "./src/assets/images/superman-page.webp"
+		"urlImage": "./src/assets/images/projects/superman-page.webp"
 	},
 	{
 		"title": "Componente de Resumo de Resultados",
-		"description": "Um componente de resumo de resultados desenvolvido a partir de um design do Frontend Mentor, com dados preenchidos dinamicamente via JSON.",
+		"description": "Componente de resumo de resultados desenvolvido a partir de um design do Frontend Mentor, com dados preenchidos dinamicamente via JSON.",
 		"stacks": ["HTML", "CSS", "Javascript", "Figma"],
 		"urlPreview": "https://mateus-f.github.io/results-summary-component",
 		"urlGithub": "https://github.com/mateus-f/results-summary-component",
-		"urlImage": "./src/assets/images/componente-resumo.webp"
+		"urlImage": "./src/assets/images/projects/componente-resumo.webp"
 	}
 ]
