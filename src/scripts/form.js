@@ -48,7 +48,7 @@ function validateForm() {
 }
 
 function validateName(name) {
-  const isValidName = (name) => /^[a-zA-Z\s]+$/.test(name);
+  const isValidName = (name) => /^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/.test(name);
   trimAndUpdateValue(name);
 
   if (!name.value) {
