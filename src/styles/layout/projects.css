@@ -4,9 +4,14 @@
 	overflow-x: auto;
 	gap: 1.875rem;
 	max-height: 36.25rem;
+	scroll-snap-type: x mandatory;
 
 	&::-webkit-scrollbar {
 		display: none;
+	}
+
+	@media (min-width: 93.75rem){
+		justify-content: center;
 	}
 }
 
@@ -16,8 +21,18 @@
 	background-color: var(--dark-gray-color);
 	border: 1px solid var(--gray-color);
 	flex: 1 0 22.5rem;
-	border-radius: 3.125rem;
+	max-width: 30rem;
+	border-radius: calc(var(--radius-base) + 1.875rem);
 	overflow: hidden;
+	scroll-snap-align: start;
+
+	@media (max-width: 53.75rem){
+		flex-basis: 60%;
+	}
+
+	@media (max-width: 28.125rem){
+		flex-basis: 80%;
+	}
 
 	.image {
 		position: relative;
@@ -75,6 +90,7 @@
 		gap: 0.625rem;
 		color: var(--light-color);
 		font-size: var(--normal-text);
+		line-height: var(--text-lh);
 
 		h3 {
 			font-weight: 700;
