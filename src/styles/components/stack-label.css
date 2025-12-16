@@ -33,4 +33,22 @@
 		color: var(--js-color);
 		border-color: var(--js-color);
 	}
+
+	&.jest {
+		background-color: var(--jest-bg);
+		color: var(--jest-color);
+		border-color: var(--jest-color);
+	}
+
+	&.java{
+		background-color: var(--java-bg);
+		color: var(--java-color);
+		border-color: var(--java-color);
+	}
+
+	&.junit{
+		background-color: var(--junit-bg);
+		color: var(--junit-color);
+		border-color: var(--junit-color);
+	}
 }

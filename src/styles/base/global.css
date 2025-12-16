@@ -4,12 +4,14 @@
 	src: url("../../assets/fonts/Inter-Light.woff2") format("woff2");
 	font-display: swap;
 }
+
 @font-face {
 	font-family: "Inter";
 	font-weight: 400;
 	src: url("../../assets/fonts/Inter-Regular.woff2") format("woff2");
 	font-display: swap;
 }
+
 @font-face {
 	font-family: "Inter";
 	font-weight: 700;
@@ -62,6 +64,12 @@ html {
 	--tailwind-color: #38bdf8;
 	--js-bg: #665600;
 	--js-color: #ffd400;
+	--jest-bg: #5c1227;
+	--jest-color: #ff356e;
+	--java-bg: #470808;
+	--java-color: #EA2D2E;
+	--junit-bg: #063a20;
+	--junit-color: #23A161;
 
 	--dark-gradient: to right, var(--dark-color), #848484;
 	--light-gradient: -81deg, var(--light-color), #3d3d3d;
