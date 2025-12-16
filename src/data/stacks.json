@@ -1,13 +1,5 @@
 [
 	{
-		"label": "HTML",
-		"iconUrl": "./src/assets/images/stack-icons/html.svg"
-	},
-	{
-		"label": "CSS",
-		"iconUrl": "./src/assets/images/stack-icons/css.svg"
-	},
-	{
 		"label": "JavaScript",
 		"iconUrl": "./src/assets/images/stack-icons/javascript.svg"
 	},
@@ -16,8 +8,32 @@
 		"iconUrl": "./src/assets/images/stack-icons/typescript.svg"
 	},
 	{
+		"label": "Jest",
+		"iconUrl": "./src/assets/images/stack-icons/jest.svg"
+	},
+	{
 		"label": "Angular",
 		"iconUrl": "./src/assets/images/stack-icons/angular.svg"
+	},
+	{
+		"label": "Java",
+		"iconUrl": "./src/assets/images/stack-icons/java.svg"
+	},
+	{
+		"label": "JUnit",
+		"iconUrl": "./src/assets/images/stack-icons/junit.svg"
+	},
+	{
+		"label": "PostgresSQL",
+		"iconUrl": "./src/assets/images/stack-icons/postgressql.svg"
+	},
+	{
+		"label": "HTML",
+		"iconUrl": "./src/assets/images/stack-icons/html.svg"
+	},
+	{
+		"label": "CSS",
+		"iconUrl": "./src/assets/images/stack-icons/css.svg"
 	},
 	{
 		"label": "SCSS",
