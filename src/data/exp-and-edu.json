@@ -1,5 +1,11 @@
 [
 	{
+		"period": "Fevereiro 2026 - Presente",
+		"position": "Estágio em Qualidade - Crescer Level 2",
+		"institution": "CWI Software",
+		"logoPath": "./src/assets/images/institution-logo/cwi.webp"
+	},
+	{
 		"period": "Agosto 2025 - 2029",
 		"position": "Bacharelado em Ciência da Computação",
 		"institution": "Instituto Federal do Ceará - IFCE",
