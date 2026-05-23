@@ -1,5 +1,17 @@
 [
 	{
+		"label": "Java",
+		"iconUrl": "./src/assets/images/stack-icons/java.svg"
+	},
+	{
+		"label": "Spring Boot",
+		"iconUrl": "./src/assets/images/stack-icons/spring-boot.svg"
+	},
+	{
+		"label": "JUnit",
+		"iconUrl": "./src/assets/images/stack-icons/junit.svg"
+	},
+	{
 		"label": "JavaScript",
 		"iconUrl": "./src/assets/images/stack-icons/javascript.svg"
 	},
@@ -8,24 +20,20 @@
 		"iconUrl": "./src/assets/images/stack-icons/typescript.svg"
 	},
 	{
-		"label": "Jest",
-		"iconUrl": "./src/assets/images/stack-icons/jest.svg"
-	},
-	{
 		"label": "Angular",
 		"iconUrl": "./src/assets/images/stack-icons/angular.svg"
 	},
 	{
-		"label": "Java",
-		"iconUrl": "./src/assets/images/stack-icons/java.svg"
-	},
-	{
-		"label": "JUnit",
-		"iconUrl": "./src/assets/images/stack-icons/junit.svg"
+		"label": "Jest",
+		"iconUrl": "./src/assets/images/stack-icons/jest.svg"
 	},
 	{
 		"label": "PostgresSQL",
 		"iconUrl": "./src/assets/images/stack-icons/postgressql.svg"
+	},
+	{
+		"label": "Docker",
+		"iconUrl": "./src/assets/images/stack-icons/docker.svg"
 	},
 	{
 		"label": "HTML",
@@ -44,6 +52,10 @@
 		"iconUrl": "./src/assets/images/stack-icons/tailwind.svg"
 	},
 	{
+		"label": "Figma",
+		"iconUrl": "./src/assets/images/stack-icons/figma.svg"
+	},
+	{
 		"label": "Git",
 		"iconUrl": "./src/assets/images/stack-icons/git.svg"
 	},
@@ -52,7 +64,7 @@
 		"iconUrl": "./src/assets/images/stack-icons/github.svg"
 	},
 	{
-		"label": "Figma",
-		"iconUrl": "./src/assets/images/stack-icons/figma.svg"
+		"label": "GitLab",
+		"iconUrl": "./src/assets/images/stack-icons/gitlab.svg"
 	}
 ]
