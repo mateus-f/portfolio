@@ -27,18 +27,6 @@
 		"urlImage": "./src/assets/images/projects/quanto-tempo-faz.webp"
 	},
 	{
-		"title": "Landing Page do Superman",
-		"description": "Projeto de estudo criado como parte de um desafio do The Odin Project, com foco em praticar Flexbox, responsividade e boas práticas de código.",
-		"stacks": [
-			"HTML",
-			"CSS",
-			"Javascript"
-		],
-		"urlPreview": "https://mateus-f.github.io/superman-page",
-		"urlGithub": "https://github.com/mateus-f/superman-page",
-		"urlImage": "./src/assets/images/projects/superman-page.webp"
-	},
-	{
 		"title": "Sistema de Biblioteca",
 		"description": "Sistema de biblioteca em Java 8 com empréstimo e devolução de livros, usando OO, coleções e testes unitários com JUnit 4.",
 		"stacks": [

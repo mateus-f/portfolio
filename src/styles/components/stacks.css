@@ -1,7 +1,7 @@
 .stacks-container {
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 38.75rem;
+	max-width: 47.5rem;
 	justify-content: center;
 	margin-inline: auto;
 	gap: 1.875rem;
