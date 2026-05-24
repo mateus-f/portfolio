@@ -1,0 +1,83 @@
+[
+  {
+    "type": "experience",
+    "role": "Estágio em QA - Crescer Level 2",
+    "institution": "CWI Software",
+    "startDate": "2026-02",
+    "endDate": null,
+    "isCurrent": true,
+    "logoPath": "./src/assets/images/institution-logo/cwi.webp"
+  },
+  {
+    "type": "education",
+    "role": "CWI Crescer Level 2 - Trilha de QA - 28ª Edição",
+    "institution": "CWI Software",
+    "startDate": "2026-05",
+    "endDate": null,
+    "isCurrent": false,
+    "logoPath": "./src/assets/images/institution-logo/cwi.webp"
+  },
+  {
+    "type": "education",
+    "role": "Angular Clássico",
+    "institution": "Loaine Training",
+    "startDate": "2026-04",
+    "endDate": null,
+    "isCurrent": false,
+    "logoPath": "./src/assets/images/institution-logo/ltraining.webp"
+  },
+  {
+    "type": "education",
+    "role": "CWI Crescer Level 1 - 28ª Edição",
+    "institution": "CWI Software",
+    "startDate": "2026-01",
+    "endDate": null,
+    "isCurrent": false,
+    "logoPath": "./src/assets/images/institution-logo/cwi.webp"
+  },
+  {
+    "type": "education",
+    "role": "Bacharelado em Ciência da Computação",
+    "institution": "Instituto Federal do Ceará - IFCE",
+    "startDate": "2025-08",
+    "endDate": "2029-12",
+    "isCurrent": false,
+    "logoPath": "./src/assets/images/institution-logo/ifce.webp"
+  },
+  {
+    "type": "experience",
+    "role": "Auxiliar Administrativo - Jovem Aprendiz",
+    "institution": "Dunas Revenda Ambev",
+    "startDate": "2025-07",
+    "endDate": "2025-12",
+    "isCurrent": false,
+    "logoPath": "./src/assets/images/institution-logo/dunas.webp"
+  },
+  {
+    "type": "experience",
+    "role": "Estágio em TI",
+    "institution": "Centro Universitário do Vale do Jaguaribe",
+    "startDate": "2024-08",
+    "endDate": "2024-12",
+    "isCurrent": false,
+    "logoPath": "./src/assets/images/institution-logo/unijaguaribe.webp"
+  },
+  {
+    "type": "education",
+    "role": "Conceitos básicos do Design de experiência do usuário (UX)",
+    "institution": "United Latino Students Association",
+    "startDate": "2024-06",
+    "endDate": null,
+    "isCurrent": false,
+    "logoPath": "./src/assets/images/institution-logo/united-latino.webp"
+  },
+  {
+    "type": "experience",
+    "role": "Monitor de Robótica - Voluntário",
+    "institution": "CNPq",
+    "startDate": "2023-08",
+    "endDate": "2023-12",
+    "isCurrent": false,
+    "logoPath": "./src/assets/images/institution-logo/cnpq.webp"
+  }
+]

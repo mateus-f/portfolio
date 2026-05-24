@@ -2,7 +2,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 2.1875rem;
+	height: 2rem;
 	padding-inline: 1.25rem;
 	background-color: transparent;
 	border: 1px solid var(--gray-color);

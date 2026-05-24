@@ -16,8 +16,46 @@
 
 	.items-container {
 		display: flex;
+		align-self: flex-start;
 		flex-direction: column;
-		gap: 1.875rem;
+		width: 40%;
+		gap: 1.25rem;
+
+		@media (max-width: 60rem) {
+			align-self: center;
+		}
+
+		.tab-buttons {
+			width: fit-content;
+			border-radius: var(--radius-base);
+			overflow: hidden;
+			border: 1px solid var(--dark-gray-color);
+			display: flex;
+
+			@media (max-width: 60rem) {
+				width: 100%;
+				margin-inline: auto;
+			}
+
+			button {
+				padding: 0.625rem 1.875rem;
+				transition: var(--transition);
+				font-size: var(--normal-text);
+				cursor: pointer;
+				background: transparent;
+				border-radius: var(--radius-base);
+				color: var(--light-color);
+
+				@media (max-width: 60rem) {
+					width: 50%;
+				}
+
+				&.active {
+					background: var(--gray-color);
+					color: var(--dark-color);
+				}
+			}
+		}
 
 		.item {
 			display: flex;
@@ -25,11 +63,14 @@
 			transition: var(--transition);
 			padding: 0.3125rem 0.625rem;
 			border-radius: calc(var(--radius-base) + 0.3125rem);
+			border: 1px solid transparent;
+
 			gap: 0.9375rem;
 			cursor: pointer;
 
 			&:hover {
 				background-color: var(--dark-gray-color);
+				border-color: var(--gray-color);
 
 				img {
 					opacity: 1;
@@ -59,6 +100,10 @@
 				flex-direction: column;
 				font-size: var(--normal-text);
 				line-height: var(--lh-normal);
+
+				.period {
+					text-transform: capitalize;
+				}
 
 				.period,
 				.institution {
