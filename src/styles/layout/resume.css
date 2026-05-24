@@ -23,6 +23,11 @@
 
 		@media (max-width: 60rem) {
 			align-self: center;
+			width: 75%;
+		}
+
+		@media (max-width: 35rem) {
+			width: 100%;
 		}
 
 		.tab-buttons {
